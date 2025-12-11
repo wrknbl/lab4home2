@@ -2,82 +2,82 @@
 #include <Windows.h>
 #define MAX_N 10
 
-//void Task_1_static() {
-//	printf("<Task 1 static>\n");
-//
-//	int arr[MAX_N];
-//	int n;
-//
-//	printf("n=");
-//	scanf_s("%d", &n);
-//
-//	for (int i = 0; i < n; i++) {
-//		scanf_s("%d", &arr[i]);
-//	}
-//	printf("Array: ");
-//	for (int i = 0; i < n; i++) {
-//		printf("%d ", arr[i]);
-//	}
-//	printf("\n");
-//	for (int i = 0; i < n - 1; i++) {
-//		for (int j = 0; j < n - i - 1; j++) {
-//			if (arr[j] > arr[j + 1]) {
-//				int temp = arr[j];
-//				arr[j] = arr[j + 1];
-//				arr[j + 1] = temp;
-//			}
-//		}
-//	}
-//	printf("Array: ");
-//	for (int i = 0; i < n; i++) {
-//		printf("%d ", arr[i]);
-//	}
-//	printf("\n");
-//	{
-//		int x;
-//		scanf_s("%d", &x);
-//	}
-//}
-//
-//void Task_1_dynamic() {
-//	printf("<Task 1 dynamic>\n");
-//	int n;
-//	int* arr;
-//
-//	printf("n=");
-//	scanf_s("%d", &n);
-//
-//	arr = (int*)malloc(n * sizeof(int));
-//
-//	for (int i = 0; i < n; i++) {
-//		scanf_s("%d", &arr[i]);
-//	}
-//
-//	printf("Array: ");
-//	for (int i = 0; i < n; i++) {
-//		printf("%d ", arr[i]);
-//	}
-//	printf("\n");
-//	for (int i = 0; i < n - 1; i++) {
-//		for (int j = 0; j < n - i - 1; j++) {
-//			if (arr[j] > arr[j + 1]) {
-//				int temp = arr[j];
-//				arr[j] = arr[j + 1];
-//				arr[j + 1] = temp;
-//			}
-//		}
-//	}
-//	printf("Array: ");
-//	for (int i = 0; i < n; i++) {
-//		printf("%d ", arr[i]);
-//	}
-//	printf("\n");
-//	{
-//		int x;
-//		scanf_s("%d", &x);
-//	}
-//	free(arr);
-//}
+void Task_1_static() {
+	printf("<Task 1 static>\n");
+
+	int arr[MAX_N];
+	int n;
+
+	printf("n=");
+	scanf_s("%d", &n);
+
+	for (int i = 0; i < n; i++) {
+		scanf_s("%d", &arr[i]);
+	}
+	printf("Array: ");
+	for (int i = 0; i < n; i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+	for (int i = 0; i < n - 1; i++) {
+		for (int j = 0; j < n - i - 1; j++) {
+			if (arr[j] > arr[j + 1]) {
+				int temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
+	printf("Array: ");
+	for (int i = 0; i < n; i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+	{
+		int x;
+		scanf_s("%d", &x);
+	}
+}
+
+void Task_1_dynamic() {
+	printf("<Task 1 dynamic>\n");
+	int n;
+	int* arr;
+
+	printf("n=");
+	scanf_s("%d", &n);
+
+	arr = (int*)malloc(n * sizeof(int));
+
+	for (int i = 0; i < n; i++) {
+		scanf_s("%d", &arr[i]);
+	}
+
+	printf("Array: ");
+	for (int i = 0; i < n; i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+	for (int i = 0; i < n - 1; i++) {
+		for (int j = 0; j < n - i - 1; j++) {
+			if (arr[j] > arr[j + 1]) {
+				int temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
+	printf("Array: ");
+	for (int i = 0; i < n; i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+	{
+		int x;
+		scanf_s("%d", &x);
+	}
+	free(arr);
+}
 //
 //void Task_2() {
 //	printf("<Task 2>\n");
